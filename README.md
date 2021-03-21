@@ -6,7 +6,7 @@
   
  ### Purpose
   
-  The purpose of this analysis was to find out how the company Daqos' stock performed in 2018 for a clients parents. They wanted to see the total trading volume because they believe an often traded stock accurately reflects its value. They also wanted to calculate the annual rate of return. Then, we analysed the 11 other companies in the data set for both 2017 and 2018 so the clients parents could compare the performance of the company they were interested in to the others in the data set. 
+  The purpose of this analysis was to find out how the company Daqos' stock performed in 2018 for a clients parents. They wanted to see the total trading volume because they believe an often traded stock accurately reflects its value. They also wanted to calculate the annual rate of return. Then, we analyzed the 11 other companies in the data set for both 2017 and 2018 so the clients parents could compare the performance of the company they were interested in to the others in the data set. 
 
 ## Results
 
@@ -26,7 +26,7 @@
 
 ![All_Stocks_2018](https://user-images.githubusercontent.com/78178900/111891567-1e4dad80-89c2-11eb-83e7-2a472855be85.png)
 
-  The result from analyzing all 12 of the stocks for the year 2018 revealed that the stock with the highest total trading volume was the company with the ticker symbol ENPH with a total trading volume of 607,473,500 and its rate of return was 81.9%. The lowest total trading volume was company AY at 83,079,900 with a rate of return at -7.3%. It is noteworthy that the difference in positive rates of return between 2017 and 2018 are almost opposite, there are only two companies with a positive rate of return: ENPH and RUN. All of the other companies have a negative rate of return ranging from -62.6%(DQ) to -3.5%(VSLR). So, although the trading for 2017 indicates that DQ was the best company to have purchased stock for, 2018 indicates it is the absolute worst to have purchased stock for. 
+  The result from analyzing all 12 of the stocks for the year 2018 revealed that the stock with the highest total trading volume was the company with the ticker symbol ENPH with a total trading volume of 607,473,500 and its rate of return was 81.9%. The lowest total trading volume was company AY at 83,079,900 with a rate of return at -7.3%. It is noteworthy that the difference in positive rates of return between 2017 and 2018 are almost opposite, there are only two companies with a positive rate of return in 2018: ENPH and RUN. All of the other companies have a negative rate of return ranging from -62.6%(DQ) to -3.5%(VSLR). So, although the previous analysis of trading for 2017 indicates that DQ was the best company to have purchased stock for, this 2018 analysis indicates it is the absolute worst to have purchased stock for. 
 
 ### Execution Time of Analysis
 
@@ -34,7 +34,7 @@
   
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-  Sub AllStocksAnalysis()
+    Sub AllStocksAnalysis()
     
     Dim startTime As Single
     Dim endTime As Single
@@ -129,7 +129,7 @@
     
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
-  End Sub
+    End Sub
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -143,7 +143,7 @@ The concern was that if we were to use this code to analyze a larger list of sto
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-Sub AllStocksAnalysisRefactored()
+    Sub AllStocksAnalysisRefactored()
     
     'Declare variables to hold sub routine timer values
     Dim startTime As Single
@@ -274,7 +274,7 @@ Sub AllStocksAnalysisRefactored()
     'Creates pop up message for how long it took to run the analysis for the selected year
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
-End Sub
+    End Sub
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
