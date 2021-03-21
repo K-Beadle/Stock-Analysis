@@ -136,7 +136,6 @@
 The following images show how long it took to run the code for each year:
 
 ![VBA_Original_2017](https://user-images.githubusercontent.com/78178900/111893507-2e20be00-89d1-11eb-84c8-0cba5da65af9.png)
-
 ![VBA_Original_2018](https://user-images.githubusercontent.com/78178900/111893508-2fea8180-89d1-11eb-92f1-1cbb4ac65b48.png)
 
 The concern was that if we were to use this code to analyze a larger list of stock data that it may take a long time to run because it was built to loop through the entire sheet for each ticker symbol instead of search through it once and stop at each one. Because we want to have the freedom to use this macro for larger data sets we refactored the code to make it run more efficient. The following macro contains the refactored code:
